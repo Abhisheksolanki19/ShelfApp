@@ -7,4 +7,8 @@ To run this app do the following steps.
 4. Now run the app and enjoy the world of manga and anime 😊.
 
 ## Screenshots
-<img src="/screenshots/screen1.jpg" height="400">&nbsp;<img src="/screenshots/screen2.jpg" height="400">&nbsp;<img src="/screenshots/screen3.jpg" height="400">&nbsp;<img src="/screenshots/screen4.jpg" height="400">&nbsp;<img src="/screenshots/screen5.jpg" height="400">&nbsp;<img src="/screenshots/s6.jpg" height="400">&nbsp;
+<img src="/screenshots/screen1.jpg" height="400">&nbsp;
+<img src="/screenshots/screen2.jpg" height="400">&nbsp;
+<img src="/screenshots/screen3.jpg" height="400">&nbsp;
+<img src="/screenshots/screen4.jpg" height="400">&nbsp;
+<img src="/screenshots/screen5.jpg" height="400">&nbsp;
