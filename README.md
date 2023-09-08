@@ -7,13 +7,8 @@ To run this app do the following steps.
 4. Now run the app and enjoy the world of manga and anime 😊.
 
 ## Screenshots
-<img src="https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/0c3c2c17-5060-4290-9d24-2417f629c944" height="400">&nbsp;
-<img src="[/screenshots/screen2.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/0278fb53-b5b0-496d-a692-42c17244be41)" height="400">&nbsp;
-<img src="[/screenshots/screen3.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/e955e165-dd59-4d83-8e9f-ff6fb63a1933)" height="400">&nbsp;
-<img src="[/screenshots/screen4.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/4c34df59-36ed-49f7-8332-049bbe32a905)" height="400">&nbsp;
-<img src="[/screenshots/screen5.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/43f36416-05ab-493c-8aa7-8405ec4f3af0)" height="400">&nbsp;
-![screen5](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/0cf9f983-8d29-4cc9-9073-f8f3cc0ebf3c)
-![screen4](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/6d066835-abf3-4c25-af6e-7a6c9232b75a)
-![screen3](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/655df237-2f8a-44db-8c56-ea7e6353eab1)
-![screen2](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/eed1063f-7e38-4afc-9956-bbb3b94174d5)
-![screen1](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/401eb4f4-5f3f-4ed7-a715-3c43cf767be3)
+<img src="https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/0c3c2c17-5060-4290-9d24-2417f629c944" height="400">
+<img src="[/screenshots/screen2.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/0278fb53-b5b0-496d-a692-42c17244be41)" height="400">
+<img src="[/screenshots/screen3.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/e955e165-dd59-4d83-8e9f-ff6fb63a1933)" height="400">
+<img src="[/screenshots/screen4.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/4c34df59-36ed-49f7-8332-049bbe32a905)" height="400">
+<img src="[/screenshots/screen5.jpg](https://github.com/Abhisheksolanki19/ShelfApp/assets/52146654/43f36416-05ab-493c-8aa7-8405ec4f3af0)" height="400">
