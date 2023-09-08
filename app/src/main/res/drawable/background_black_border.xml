@@ -1,0 +1,21 @@
+<!-- res/drawable/border_layout.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the background color (optional) -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Define the border shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Border color -->
+            <solid android:color="@color/white" />
+
+            <!-- Border width -->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/black" />
+
+            <!-- Corner radius for rounded corners (optional) -->
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</layer-list>

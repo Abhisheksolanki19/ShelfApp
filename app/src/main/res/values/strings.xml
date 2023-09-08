@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ShelfApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--SignUp Screen-->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_select_country">Select your country</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="msg_user_name_required">This field is required</string>
+    <string name="msg_user_name_invalid">Username is invalid. It should contain only letters and spaces.</string>
+    <string name="msg_confirm_password_invalid">Passwords do not match. Please make sure they are the same</string>
+    <string name="msg_password_invalid">Password is invalid. It should be at least 8 characters long with at least one number, one special character, one lowercase letter, and one uppercase letter.</string>
+    <string name="msg_signup_success">Signup successful!</string>
+    <string name="msg_error">Something went wrong…Please try again!</string>
+    <string name="msg_select_country">Select a country</string>
+
+    <!--Login Screen-->
+    <string name="label_login">Login</string>
+    <string name="label_create_account">Don\'t have an account?</string>
+    <string name="label_have_account">Already have an account?</string>
+    <string name="label_invalid_credentials">Enter Valid credentials</string>
+
+    <!--Home Screen-->
+    <string name="label_logout_success">Successfully Logout</string>
+    <string name="msg_your_book_shelf">Your Bookshelf</string>
+    <string name="label_sort_by">Sort by:</string>
+    <string name="label_ascending_order">Ascending Order-</string>
+    <string name="label_no_favourite_book">Click on Star to add any book favourite</string>
+    <string name="label_title">Title</string>
+    <string name="label_hits">Hits</string>
+    <string name="label_favs">Favs</string>
+    <string name="label_hits_number">Hits: %1$d</string>
+    <string name="label_alias">Alias: %1$s</string>
+    <string name="label_updated_on">Updated on - %1$s </string>
+    <string name="label_summary">Summary:</string>
+    <string name="msg_book_summary">Book Summary</string>
+    <string name="label_summary_detail">Manga books, originating from Japan, have become a global phenomenon and a beloved form of entertainment for readers of all ages. These unique graphic novels are characterized by their distinctive black-and-white artwork, which is intricately detailed and emotionally expressive. Manga covers a wide range of genres, from action-packed adventures and romantic dramas to science fiction and fantasy epics. What sets manga apart is its ability to explore complex narratives and character development, often delving into cultural, social, and psychological themes. With a dedicated fan base worldwide, manga has transcended language barriers, making it accessible to readers everywhere. Its influence extends beyond print, with numerous adaptations into anime series and movies. Whether you are drawn to the captivating storytelling or the artistry of each page, manga books offer an immersive and diverse reading experience that continues to captivate and inspire readers across the globe.</string>
+</resources>

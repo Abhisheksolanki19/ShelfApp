@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideline96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clActionBar"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvYourBookshelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_your_book_shelf"
+            android:textColor="@color/black100"
+            android:textSize="@dimen/font_size_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvSortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_sort_by"
+        android:textColor="@color/black100"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline4"
+        app:layout_constraintTop_toTopOf="@+id/llSortingButtons"
+        app:layout_constraintBottom_toBottomOf="@+id/llSortingButtons"/>
+
+    <LinearLayout
+        android:id="@+id/llSortingButtons"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        app:layout_constraintTop_toBottomOf="@+id/clActionBar"
+        app:layout_constraintStart_toEndOf="@+id/tvSortBy"
+        app:layout_constraintEnd_toEndOf="@+id/verticalGuideline96">
+
+        <Button
+            android:id="@+id/btnTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_weight="1"
+            android:padding="@dimen/dimen_0"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:text="@string/label_title"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnHits"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32"
+            android:padding="@dimen/dimen_0"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:text="@string/label_hits"
+            android:background="@drawable/background_transparent_with_border"
+            android:gravity="center"
+            android:textColor="@color/black100" />
+
+        <Button
+            android:id="@+id/btnFavs"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32"
+            android:padding="@dimen/dimen_0"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:text="@string/label_favs"
+            android:background="@drawable/background_transparent_with_border"
+            android:gravity="center"
+            android:textColor="@color/black100" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAscendingOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/label_ascending_order"
+        android:textColor="@color/black100"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline4"
+        app:layout_constraintTop_toBottomOf="@+id/llSortingButtons"/>
+
+    <Switch
+        android:id="@+id/ascendingOrderSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:checked="false"
+        android:textOff="Off"
+        android:textOn="On"
+        app:layout_constraintTop_toTopOf="@+id/tvAscendingOrder"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAscendingOrder"
+        app:layout_constraintStart_toEndOf="@+id/tvAscendingOrder"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooks"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/wrap_constraint"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_16"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideline96"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideline4"
+        app:layout_constraintTop_toBottomOf="@+id/ascendingOrderSwitch"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvNoFavBooks"
+        android:layout_width="@dimen/wrap_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/label_no_favourite_book"
+        android:textColor="@color/black100"
+        android:textSize="@dimen/font_size_16"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/verticalGuideline96"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ascendingOrderSwitch"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.LoginFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:text="@string/label_login"
+        android:textColor="@color/black100"
+        android:textSize="@dimen/font_size_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideline30" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_black_border"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="@dimen/dimen_8"
+        android:hint="@string/hint_username"
+        android:inputType="textPersonName"
+        android:padding="@dimen/dimen_12"
+        android:textSize="@dimen/font_size_14"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideline30" />
+
+    <TextView
+        android:id="@+id/tvUserNameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/msg_user_name_required"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNameError">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_black_border"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/dimen_8"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/dimen_12"
+            android:textSize="@dimen/font_size_14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivShowHidePassword"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_14"
+            android:src="@drawable/ic_close_eye"
+            app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintTop_toTopOf="@+id/etPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvPasswordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/msg_user_name_required"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/clPassword"
+        app:layout_constraintTop_toBottomOf="@+id/clPassword"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:background="@drawable/background_border_with_bottom_shadow"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_16"
+        android:text="@string/label_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordError" />
+
+    <TextView
+        android:id="@+id/tvDoNotHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_30"
+        android:text="@string/label_create_account"
+        android:textColor="@color/black100"
+        android:textSize="@dimen/font_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:text="@string/label_sign_up"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_size_14"
+        app:layout_constraintStart_toEndOf="@+id/tvDoNotHaveAccount"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDoNotHaveAccount"
+        app:layout_constraintTop_toTopOf="@+id/tvDoNotHaveAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

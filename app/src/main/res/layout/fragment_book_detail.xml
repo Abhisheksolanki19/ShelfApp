@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.bookdetail.BookDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clActionBar"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvYourBookshelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_book_summary"
+            android:textColor="@color/black100"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wrap_constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clActionBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_24">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalGuideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalGuideline96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBook"
+                android:layout_width="@dimen/wrap_constraint"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_16"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/verticalGuideline96"
+                app:layout_constraintStart_toStartOf="@+id/verticalGuideline4"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="@dimen/dimen_80"
+                        android:layout_height="@dimen/dimen_80"
+                        android:layout_margin="@dimen/dimen_16"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_person"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        app:layout_constraintEnd_toStartOf="@+id/ivStar"
+                        app:layout_constraintStart_toEndOf="@id/ivImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivImage"
+                        tools:text="Title of manga" />
+
+                    <ImageView
+                        android:id="@+id/ivStar"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:layout_margin="@dimen/dimen_16"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_star_border"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvHits"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+
+                    <TextView
+                        android:id="@+id/tvHits"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginEnd="@dimen/dimen_8"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+                        app:layout_constraintStart_toEndOf="@id/ivImage"
+                        app:layout_constraintEnd_toStartOf="@+id/ivStar"
+                        tools:text="Hits: 4565" />
+
+                    <TextView
+                        android:id="@+id/tvAlias"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_48"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+                        tools:text="Alias: Alias of manga" />
+
+                    <TextView
+                        android:id="@+id/tvUpdated"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAlias"
+                        tools:text="Updated on- 19th Nov 1999" />
+
+                    <TextView
+                        android:id="@+id/tvSummary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/label_summary"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvUpdated" />
+
+                    <TextView
+                        android:id="@+id/tvSummaryDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:text="@string/label_summary_detail"
+                        android:textColor="@color/black100"
+                        android:textSize="@dimen/font_size_20"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSummary" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
